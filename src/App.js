@@ -7,6 +7,7 @@ import Workspace from './components/WorkspaceComponent';
 import Footer from './components/FooterComponent';
 import AllPosts from './components/AllPostComponent';
 import SinglePosts from './components/SinglePostComponent';
+import Projects from './components/ProjectsComponent'
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
@@ -22,6 +23,7 @@ class App extends Component {
           <Route component={AllPosts} path="/blog" exact />
           <Route component={SinglePosts} path="/blog/:slug" />
           <Route component={Workspace} path="/workspace" />
+          <Route component={Projects} path="/projects" />
           <Footer />
         </div>
       </BrowserRouter>

@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
 
 class Workspace extends Component {
   render() {
     return (
-      <div className="row-content">
-        <Container>
-          <Row>
+      <div className="container min-h-screen p-12 row-content">
+        
             <h1 className="title">My Workspace</h1>
             <img
-              className="img"
+              className="w-full object-cover rounded-t"
               src="/assets/images/workspace.jpg"
-              alt="My Office"
+              alt="My Office" style={{ height: "400px" }}
             ></img>
             <ul>
               <li>MacBook Pro 15” (2016) & M1 Mac Mini</li>
@@ -45,8 +43,6 @@ class Workspace extends Component {
               If you have any questions about my Workspace feel free to shoot
               me an email. You can also follow me on instagram.
             </p>
-          </Row>
-        </Container>
       </div>
     );
   }

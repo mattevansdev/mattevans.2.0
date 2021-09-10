@@ -13,11 +13,7 @@ class Footer extends Component {
                 alt="Logo"
               />
             </div>
-            <div>
-              <p className="mx-auto">
-                Matthew Evans, Full Stack & Mobile Application Developer
-              </p>
-            </div>
+            
             <div className="text-center social-links">
               <a className="btn btn-social-icon" href="http://instagram.com/">
                 <i className="fa fa-instagram"></i>
@@ -31,11 +27,14 @@ class Footer extends Component {
               <a className="btn btn-social-icon" href="http://youtube.com/">
                 <i className="fa fa-youtube"></i>
               </a>
-
+              <div>
+              <p className="mx-auto">
+                Matthew Evans, Full Stack & Mobile Application Developer
+              </p>
+            </div>
               <p>
                 <small>
                   Handcrafted by me and developered with{" "}
-                  <a href="https://getbootstrap.com/"> Bootstrap</a> and{" "}
                   <a href="https://reactjs.com/">React</a>
                 </small>
               </p>

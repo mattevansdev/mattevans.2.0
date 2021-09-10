@@ -27,10 +27,6 @@ h6 {
   line-height: 2.8;
 }
 
-a:hover {
-  color: white;
-}
-
 a {
   font-family: 'Open Sans', sans-seri;
 }
@@ -47,8 +43,6 @@ ul {
   font-size: medium;
   font-weight: 600;
   color: #1d5aa9;
-  padding-top: 20%;
-
 }
 
 .link:hover {
@@ -199,4 +193,10 @@ ul {
   margin-right: auto;
   width: 100px;
   height: auto;
+}
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }

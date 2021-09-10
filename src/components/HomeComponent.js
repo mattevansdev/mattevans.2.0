@@ -15,7 +15,7 @@ class Home extends Component {
                   alt="Matthew Evans"
                 ></img>
                 <h1 className="title">Hi there, I'm Matt Evans</h1>
-                <p className="lead sub-title">
+                <p className="lead sub-title mb-4">
                   In a galaxy far, far away, I write beautiful code.
                 </p>
                 <a
