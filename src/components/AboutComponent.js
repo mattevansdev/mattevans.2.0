@@ -6,9 +6,9 @@ class About extends Component {
             <div>
                 <div class="jumbotron about-me">
                     <div class="container">
-                        <h3 className="title text-center">Hello again, Nice to meet you.</h3>
-                        <p className="text-center">I live in Kirkland, WA with my beautiful wife and our dogs Charlie and Eleven. <br />When I’m not
-                            working, you’ll find me spending time with friends, eating pizza (hint: favorite food), <br />listening to music,
+                        <h3 className="text-4xl flex justify-center mb-4">Hello again, Nice to meet you.</h3>
+                        <p className="text-lg leading-loose xl:px-48 flex text-center mb-4">I live in Kirkland, WA with my beautiful wife and our dogs Charlie and Eleven. When I’m not
+                            working, you’ll find me spending time with friends, eating pizza (hint: favorite food), listening to music,
                             hiking, or traveling. I also enjoying photography.</p>
                     </div>
                 </div>

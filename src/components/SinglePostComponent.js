@@ -41,21 +41,6 @@ export default function SinglePosts() {
             <div className="shadow-lg mx-auto bg-white rounded-lg">
                 <div className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8">
-                        <div className="bg-white bg-opacity-75 rounded p-12">
-                            <h2 className="cursive text-3xl lg:text-6xl mb-4">
-                                {postData.title}
-                            </h2>
-                            <div className="flex justify-center text-gray-800">
-                                <img
-                                    src={urlFor(postData.authorImage).url()}
-                                    className="w-10 h-10 rounded-full"
-                                    alt="Author"
-                                />
-                                <h4 className="cursive flex items-center pl-2 text-2xl">
-                                    {postData.name}
-                                </h4>
-                            </div>
-                        </div>
                     </div>
                     <img
                         className="w-full object-cover rounded-t"
@@ -64,7 +49,18 @@ export default function SinglePosts() {
                         style={{ height: "400px" }}
                     />
                 </div>
-                <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+                <div className="bg-white bg-opacity-75 rounded p-5">
+                            <h2 className="flex justify-center text-3xl lg:text-6xl mb-4">
+                                {postData.title}
+                            </h2>
+                            <div className="flex justify-center text-gray-800">
+                                
+                                <span className="flex items-center pl-2 text-sm">
+                                    Written by: {postData.name}
+                                </span>
+                            </div>
+                        </div>
+                <div className="px-16 lg:px-48 py-12 lg:py-15 prose lg:prose-xl max-w-full">
                     <BlockContent
                         blocks={postData.body}
                         projectId={sanityClient.projectId}

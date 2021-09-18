@@ -8,7 +8,7 @@ class Footer extends Component {
           <div class="container">
             <div className="row row-content">
               <img
-                src="assets/images/me-white.png"
+                src="/assets/images/me-white.png"
                 class="footer-logo"
                 alt="Logo"
               />
