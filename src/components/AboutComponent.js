@@ -13,7 +13,7 @@ class About extends Component {
                     </div>
                 </div>
                 <div className="skills container">
-                    <div className="py-10 text-center grid md:col-1 xl:grid-cols-3 divide-x divide-gray-200">
+                    <div className="text-center grid md:col-1 xl:grid-cols-3 divide-x divide-gray-200">
                         <div className="py-10">
                             <img className="py-10 mx-auto" src="/assets/images/web-programming.png" width="64" height="auto"
                                 alt="Front-end Developement Icon" />
