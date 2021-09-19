@@ -14,8 +14,8 @@ class Home extends Component {
                   src="/assets/images/profile.jpg"
                   alt="Matthew Evans"
                 ></img>
-                <h1 className="text-5xl mb-12">Hi there, I'm Matt Evans</h1>
-                <p className="text-2xl mb-12">
+                <h1 className="text-2xl mb-12 xl:text-5xl">Hi there, I'm Matt Evans</h1>
+                <p className="mb-12 sm:text-base md:text-xl xl:text-2xl">
                   In a galaxy far, far away, I write beautiful code.
                 </p>
                 <a
