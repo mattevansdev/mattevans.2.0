@@ -10,12 +10,14 @@ export default function AllPosts() {
         sanityClient.fetch(
             `*[_type == "post"]{
                 title,
+                description,
                 slug,
                 mainImage{
                     asset->{
                     _id,
                     url
-                }
+                },
+                publishedAt,
                 }
             }`
         )
@@ -24,23 +26,41 @@ export default function AllPosts() {
     }, [])
 
     return (
-        <div className="min-h-screen p-12">
-            <div className="container mx-auto">
-                <div>
-                    <h2 className="text-5xl flex justify-center mb-12">Blog</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {allPostData &&
-                            allPostData.map((post, index) => (
-                                <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
-                                    <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-blue-600" key={index}>
-                                        <img className="w-full h-full rounded-r object-cover absolute" src={post.mainImage.asset.url} alt="Main Hero Blog"></img>
-                                        <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                                            <h2 className="text-white text-lg font-bold px-3 py-2 bg-blue-600 bg-opacity-75 rounded">{post.title}</h2>
-                                        </span>
-                                    </span>
-                                </Link>
-                            ))}
-                    </div>
+        <div>
+            <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+                <div className="text-center">
+                    <h2 className="text-4xl leading-10 tracking-tight front-extrabold text-gray-900">From the Blog</h2>
+                    <p className="mt-5 max-w-2xl mx-auto text-xl leading-7 text-gray-500">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                </div>
+                <div className="mt-12 grid gap-12 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+                    {allPostData &&
+                        allPostData.map((post, index) => (
+                            <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
+                                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                                    <div className="flex-shrink-0">
+                                        <img className="h-48 w-full object-cover" src={post.mainImage.asset.url} alt="Main Hero Blog"></img>
+                                    </div>
+                                    <div className="flex-1 p-6 flex flex-col justify-between">
+                                        <div className="flex-1">
+                                            <p className="text-sm leading-5 font-medium text-indigo-600">Blog</p>
+                                            <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">{post.title}</h3>
+                                            <p className="mt-3 text-base leading-6 text-gray-500">{post.description}</p>
+                                        </div>
+                                        <div className="mt-6 flex items-center">
+                                            <div className="flex-shrink-0">
+                                                <img className="h-10 w-10 rounded-full" src="/assets/images/profile.JPG" alt="Matt Evans"></img>
+                                            </div>
+                                            <div className="ml-3">
+                                                <p className="text-sm leading-5 font-medium text-gray-900">Matt Evans</p>
+                                                <p className="text-sm leading-5 text-gray-500">{post.publishedAt}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
                 </div>
             </div>
         </div>

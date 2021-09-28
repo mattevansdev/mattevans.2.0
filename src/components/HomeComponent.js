@@ -4,10 +4,10 @@ import { Container, Row } from "reactstrap";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="bg-gray-50">
         <Container>
           <Row>
-            <div className="home row-content mx-auto d-block">
+            <div className="min-h-screen">
               <div className="text-center">
                 <img
                   className="profile"
