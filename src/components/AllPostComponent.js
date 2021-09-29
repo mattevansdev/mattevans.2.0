@@ -29,9 +29,9 @@ export default function AllPosts() {
         <div>
             <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <h2 className="text-4xl leading-10 tracking-tight front-extrabold text-gray-900">From the Blog</h2>
+                    <h2 className="text-4xl leading-10 tracking-tight front-extrabold text-gray-900">From the blog</h2>
                     <p className="mt-5 max-w-2xl mx-auto text-xl leading-7 text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                        Latest blogs and reviews
                     </p>
                 </div>
                 <div className="mt-12 grid gap-12 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">

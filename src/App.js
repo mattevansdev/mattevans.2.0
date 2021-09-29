@@ -8,8 +8,10 @@ import AllPosts from './components/AllPostComponent';
 import SinglePosts from './components/SinglePostComponent';
 import Projects from './components/ProjectsComponent'
 import Contact from './components/ContactComponent';
+import Work from './components/WorkComponent';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -19,8 +21,7 @@ class App extends Component {
             <Header />
             <Route component={Home} path="/" exact />
             <Route component={About} path="/" exact />
-            <Route component={Home} path="/home" exact />
-            <Route component={About} path="/home" exact />
+            <Route component={Work} path="/" exact />
             <Route component={AllPosts} path="/blog" exact />
             <Route component={SinglePosts} path="/blog/:slug" />
             <Route component={Workspace} path="/workspace" />

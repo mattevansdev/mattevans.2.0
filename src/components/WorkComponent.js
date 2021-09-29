@@ -1,54 +1,27 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { NavLink } from 'react-router-dom';
 
 class Work extends Component {
   render() {
     return (
-      <div className="row-content">
-        <Container>
-          <Row>
-            <h3 className="title">My Recent Work</h3>
-            <p className="text-center">
-              Here are a few design projects I've worked on recently. Want to
-              see more? Email me.
-            </p>
-          </Row>
-          <Row>
-            <Col>
-              <div class="media">
-                <img
-                  class="rounded mx-auto d-block"
-                  src="/assets/images/placeholder.jpg"
-                  alt="Web Design"
-                  width="250"
-                  height="250"
-                />
+      <div className="py-5 px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h3 className="py-4">My Recent Work</h3>
+          <p>Here are a few projects I've worked on recently. Want to see more? <a href="mailto:me@mattevans.dev">Email me</a></p>
+          <div className="grid justify-items-center">
+            <div className="mt-12 grid gap-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <NavLink className="link" to="/projects"><img className="h-80 w-full object-cover" src="/assets/images/nucamp.png" alt="nucamp"></img></NavLink>
               </div>
-            </Col>
-            <Col>
-              <div class="media">
-                <img
-                  class="rounded mx-auto d-block"
-                  src="/assets/images/placeholder.jpg"
-                  alt="Web Design"
-                  width="250"
-                  height="250"
-                />
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <NavLink className="link" to="/projects"><img className="h-80 w-full object-cover" src="/assets/images/me-dev.png" alt="Matt Evans"></img></NavLink>
               </div>
-            </Col>
-            <Col>
-              <div class="media">
-                <img
-                  class="rounded mx-auto d-block"
-                  src="/assets/images/placeholder.jpg"
-                  alt="Web Design"
-                  width="250"
-                  height="250"
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
+            </div>
+          </div>
+          <div className="pt-16"><NavLink className="link" to="/projects"><button class="py-2 px-4 rounded-lg bg-gray-800 text-gray-100">
+          View all Projects
+          </button></NavLink></div>
+        </div>
       </div>
     );
   }

@@ -21,7 +21,7 @@ function Header() {
 
                     <div className="flex space-x-4">
                         <div>
-                            <a href="/home" className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <a href="/" className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
                                 <img src="/assets/images/logo100x100.png" height="60" width="60" alt="Logo" />
                             </a>
                         </div>

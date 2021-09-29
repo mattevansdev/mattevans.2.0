@@ -20,7 +20,7 @@ export default function Project() {
 
     }, []);
     return (
-        <main className="bg-gray-50 min-h-screen p-12">
+        <main className="bg-gray-50 p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center mb-12">Projects</h1>
                 <section className="grid md:grid-cols-2 gap-8">
