@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class Contact extends Component {
     render() {
         return (
-            <div className="bg-gray-50 py-32 px-10 min-h-screen text-xl">
+            <div className="bg-gray-50 py-32 px-10 text-xl">
                 <div className="p-10 md:w-1/2 mx-auto">
-                    <p>Hey there! This is the page where I tell you I get lots of email and read them all but can't reply to everything. It's easiest to find me on Instagram: <a href="https://www.instagram.com/mattevans.dev/">@mattevans.dev.</a></p>
+                    <p>Hey there! This is the page where I tell you I get lots of email and read them all but can't reply to everything. It's easiest to find me on Instagram: <a href="https://www.instagram.com/mattevans.dev/">@mattevans.dev</a> or you can <a href="mailto:me@mattevans.dev">email me</a>.</p>
                 </div>
-                <form action="" class="md:w-1/2 mx-auto">
+                {/* <form action="" class="md:w-1/2 mx-auto">
                     <div class="shadow-xl">
                         <div class="flex items-center bg-blue-800 rounded-t-lg border-b border-gray-500">
                             <label for="name" className="w-20 text-right mr-8 text-purple-200">Name</label>
@@ -23,7 +23,7 @@ class Contact extends Component {
                     </div>
                     <button class="block w-full rounded bg-blue-500 py-3 text-white font-bold shadow">Submit</button>
 
-                </form>
+                </form> */}
 
             </div>
         )
