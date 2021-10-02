@@ -193,3 +193,7 @@ ul {
   margin-right: auto;
   border-radius: 5px;
 }
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
