@@ -43,13 +43,13 @@ export default function SinglePosts() {
                     <div className="absolute h-full w-full flex items-center justify-center p-8">
                     </div>
                     <img
-                        className="w-full object-cover rounded-t"
+                        className="h-48 w-full object-cover rounded-t"
                         src={urlFor(postData.mainImage).url()}
                         alt=""
                         style={{ height: "400px" }}
                     />
                 </div>
-                <div className="bg-white bg-opacity-75 rounded p-5">
+                <div className="bg-white bg-opacity-75 rounded pt-5">
                             <h2 className="flex justify-center text-3xl lg:text-6xl mb-4">
                                 {postData.title}
                             </h2>
@@ -60,7 +60,7 @@ export default function SinglePosts() {
                                 </span>
                             </div>
                         </div>
-                <div className="px-16 lg:px-48 py-12 lg:py-15 prose lg:prose-xl max-w-full">
+                <div className="px-10 lg:px-48 py-10 lg:py-15 prose lg:prose-xl max-w-full">
                     <BlockContent
                         blocks={postData.body}
                         projectId={sanityClient.projectId}
