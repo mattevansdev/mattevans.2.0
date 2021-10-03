@@ -1,28 +1,19 @@
-@import url("https://unpkg.com/@tailwindcss/typography@0.2.0/dist/typography.min.css");
-@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
-
-body {
-  line-height: 1.8;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 p {
-  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.8;
-  letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, h5 { 
   font-family: 'Open Sans', sans-serif;
-  font-size: 200%; 
-  font-weight: 700;
 }
 
 h6 { 
   font-family: 'Open Sans', sans-serif;
   font-size: 20px; 
   font-weight: 700;
-  line-height: 2.8;
 }
 
 a {
@@ -57,12 +48,8 @@ ul {
   letter-spacing: 1px;
 }
 .sub-title {
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.8;
-  color: black;
+  line-height: 2.8;
 }
 
 .min-title {
@@ -116,7 +103,6 @@ ul {
 }
 
 .social-links {
-  margin: 3px;
   color: white;
 }
 
@@ -127,10 +113,6 @@ ul {
   border: 0px solid #e0e0e0;
 }
 
-.social-links {
-  margin: 3px;
-  color: white;
-}
 
 .jumbotron {
   margin-bottom: 3rem;
@@ -149,10 +131,7 @@ ul {
 
 .skills {
   margin-top: -15rem;
-  margin-bottom: 5rem;
   padding-bottom: 3rem;
-  background-color: white;
-  border: whitesmoke solid;
   border-radius: 1rem;
 }
 

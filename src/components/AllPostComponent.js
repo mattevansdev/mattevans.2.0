@@ -27,10 +27,10 @@ export default function AllPosts() {
 
     return (
         <div>
-            <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+            <div className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <h2 className="text-4xl leading-10 tracking-tight front-extrabold text-gray-900">From the blog</h2>
-                    <p className="mt-5 max-w-2xl mx-auto text-xl leading-7 text-gray-500">
+                    <h2 className="text-4xl leading-10 tracking-tight front-extrabold text-gray-900 dark:text-gray-300">From the blog</h2>
+                    <p className="mt-5 max-w-2xl mx-auto text-xl leading-7 text-gray-500 dark:text-gray-100">
                         Latest blogs and reviews
                     </p>
                 </div>
@@ -42,7 +42,7 @@ export default function AllPosts() {
                                     <div className="flex-shrink-0">
                                         <img className="h-48 w-full object-cover" src={post.mainImage.asset.url} alt="Main Hero Blog"></img>
                                     </div>
-                                    <div className="flex-1 p-6 flex flex-col justify-between">
+                                    <div className="bg-gray-50 flex-1 p-6 flex flex-col justify-between">
                                         <div className="flex-1">
                                             <p className="text-sm leading-5 font-medium text-indigo-600">Blog</p>
                                             <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">{post.title}</h3>

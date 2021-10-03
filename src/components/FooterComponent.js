@@ -8,12 +8,11 @@ class Footer extends Component {
           <div class="container">
             <div className="row row-content">
               <img
-                src="/assets/images/me-white.png"
+                src="/assets/images/me-white.png" height="auto" width="auto"
                 class="footer-logo"
                 alt="Logo"
               />
-            </div>
-            
+            </div>  
             <div className="text-center social-links">
               <a className="btn btn-social-icon" href="http://instagram.com/">
                 <i className="fa fa-instagram"></i>

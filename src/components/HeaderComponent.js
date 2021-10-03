@@ -15,7 +15,7 @@ function Header() {
         setNavbarOpen(!navbarOpen)
     }
     return (
-        <nav className="bg-gray-50">
+        <nav className="bg-gray-50 dark:bg-gray-800">
             <div className="container">
                 <div className="flex justify-between">
                     <div className="flex space-x-4">
@@ -26,16 +26,16 @@ function Header() {
                         </div>
                     </div>
                     <div className="flex items-center space-x-8">
-                        <label for="menu-toggle" className="md:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+                        <label for="menu-toggle" className="md:hidden block"><svg class="fill-current text-gray-900 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
                         <input class="hidden" type="checkbox" id="menu-toggle" />
                         <div className="hidden md:flex items-center space-x-8" id="menu">
-                            <NavLink className="link" to="/blog">
+                            <NavLink className="text-lg text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
                                 <span>Blog</span>
                             </NavLink>
-                            <NavLink className="link" to="/projects">
+                            <NavLink className="text-lg text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500" to="/projects">
                                 <span>Projects</span>
                             </NavLink>
-                            <NavLink className="link" to="/contact">
+                            <NavLink className="text-lg text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500" to="/contact">
                                 <span>Contact</span>
                             </NavLink>
                         </div>
