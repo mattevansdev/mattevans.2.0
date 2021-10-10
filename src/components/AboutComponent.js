@@ -10,7 +10,7 @@ class About extends Component {
                         <p className="text-center text-xl leading-loose xl:text-lg xl:px-48">I live in Kirkland, WA with my beautiful wife and our dogs Charlie and Eleven.</p>
                     </div>
                 </div>
-                <div className="bg-gray-100 container mx-auto rounded-3xl -mt-60 py-3 text-gray-900 ">
+                <div className="bg-indigo-50 container mx-auto rounded-3xl -mt-60 py-3 text-gray-900 ">
                     <div className="text-center grid md:col-1 xl:grid-cols-3 divide-x divide-gray-200">
                         <div className="py-10">
                             <img className="py-10 mx-auto" src="/assets/images/web-programming.png" width="64" height="auto"

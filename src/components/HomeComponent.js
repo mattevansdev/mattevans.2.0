@@ -14,9 +14,9 @@ class Home extends Component {
               <h1 className="text-xl lg:text-5xl font-extrabold dark:text-gray-300">Full Stack & Mobile Application Developer</h1>
               <p className="py-3 text-base leading-10 lg:text-2xl dark:text-gray-300">Hi, I'm Matt. In a galaxy far, far away, I write beautiful code creating successful websites and mobile applications</p>
               <div className="flex justify-center">
-                <div className="pt-16 px-3"><NavLink className="link" to="/projects"><button className="py-2 px-4 rounded-lg bg-gray-300 text-gray-100 dark:bg-gray-300 text-gray-800">
-                  Recent Projects
-                </button></NavLink></div>
+                <div className="pt-16 px-3"><NavLink className="link" to="/projects"><button class="text-lg font-bold py-2 px-4 rounded-2xl bg-gray-800 text-gray-100 dark:bg-indigo-50 dark:text-gray-800">
+              Recent Projects
+            </button></NavLink></div>
               </div>
             </div>
           </div>

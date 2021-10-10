@@ -19,8 +19,8 @@ class Work extends Component {
                 </div>
               </div>
             </div>
-            <div className="pt-16"><NavLink className="link" to="/projects"><button class="py-2 px-4 rounded-lg bg-gray-300 text-gray-100 dark:bg-gray-300 text-gray-800">
-              View all Projects
+            <div className="pt-16"><NavLink className="link" to="/projects"><button class="text-lg font-bold py-2 px-4 rounded-2xl bg-gray-800 text-gray-100 dark:bg-indigo-50 dark:text-gray-800">
+              View Projects
             </button></NavLink></div>
           </div>
         </div>
