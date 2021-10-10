@@ -4,7 +4,7 @@ class About extends Component {
     render() {
         return (
             <div className="bg-gray-50 dark:bg-gray-800">
-                <div className="jumbotron about-me px-20 sm:py-10 md:py-20 xl:py-28">
+                <div className="jumbotron about-me bg-blue-900 px-20 sm:py-10 md:py-20 xl:py-28">
                     <div class="container max-w-8xl">
                         <h3 className="text-3xl font-bold text-center xl:text-4xl py-10 xl:py-10 ">Hello again, Nice to meet you.</h3>
                         <p className="text-center text-xl leading-loose xl:text-lg xl:px-48">I live in Kirkland, WA with my beautiful wife and our dogs Charlie and Eleven.</p>

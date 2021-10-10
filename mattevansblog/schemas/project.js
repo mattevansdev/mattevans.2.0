@@ -24,12 +24,20 @@ export default {
             title: "Project Type",
             type: "string",
             options: {
-                list:  [
-                    { value: "Personal", title: "Personal"},
-                    { value: "Client", title: "Client"},
-                    { value: "School", title: "School"},
+                list: [
+                    { value: "Personal", title: "Personal" },
+                    { value: "Client", title: "Client" },
+                    { value: "School", title: "School" },
                 ],
             }
+        },
+        {
+            name: 'projectImage',
+            title: 'Project image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
         },
         {
             name: "link",
