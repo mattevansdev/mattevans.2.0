@@ -6,11 +6,11 @@ class About extends Component {
             <div className="bg-gray-50 dark:bg-gray-800">
                 <div className="jumbotron about-me bg-blue-900 px-20 sm:py-10 md:py-20 xl:py-28">
                     <div class="container max-w-8xl">
-                        <h3 className="text-3xl font-bold text-center xl:text-4xl py-10 xl:py-10 ">Hello again, Nice to meet you.</h3>
-                        <p className="text-center text-xl leading-loose xl:text-lg xl:px-48">I live in Kirkland, WA with my beautiful wife and our dogs Charlie and Eleven.</p>
+                        <h3 className="text-3xl font-extrabold text-center md:text-4xl py-10 md:py-10 ">Hello again, Nice to meet you.</h3>
+                        <p className="text-center text-base leading-10 md:text-2xl md:leading-loose xl:px-48">I live in Kirkland, WA, with my beautiful wife and our dachshunds Charlie and Eleven. Eleven was named after Strangers Things, and she likes waffles. I enjoy traveling and exploring new and exciting places, including pizza places (hint: favorite food). </p>
                     </div>
                 </div>
-                <div className="bg-indigo-50 container mx-auto rounded-3xl -mt-60 py-3 text-gray-900 ">
+                <div className="bg-indigo-50 container mx-auto rounded-3xl -mt-44 py-3 text-gray-900 ">
                     <div className="text-center grid md:col-1 xl:grid-cols-3 divide-x divide-gray-200">
                         <div className="py-10">
                             <img className="py-10 mx-auto" src="/assets/images/web-programming.png" width="64" height="auto"
