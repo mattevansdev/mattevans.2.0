@@ -37,13 +37,13 @@ class Header extends React.Component {
                             <Menu right isOpen={this.state.menuOpen}
                                 onStateChange={(state) => this.handleStateChange(state)} >
 
-                                <NavLink onClick={() => this.closeMenu()} className="text-lg md:text-xl font-bold uppercase text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
+                                <NavLink onClick={() => this.closeMenu()} className="text-lg md:text-xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
                                     <span>Blog</span>
                                 </NavLink>
-                                <NavLink onClick={() => this.closeMenu()} className="text-lg md:text-xl font-bold uppercase text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500" to="/projects">
+                                <NavLink onClick={() => this.closeMenu()} className="text-lg md:text-xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/projects">
                                     <span>Projects</span>
                                 </NavLink>
-                                <NavLink onClick={() => this.closeMenu()} className="text-lg md:text-xl font-bold uppercase text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500" to="/contact">
+                                <NavLink onClick={() => this.closeMenu()} className="text-lg md:text-xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/contact">
                                     <span>Contact</span>
                                 </NavLink>
                             </Menu>
