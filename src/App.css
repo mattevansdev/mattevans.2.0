@@ -98,7 +98,6 @@ ul {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 
@@ -110,7 +109,7 @@ ul {
   width: 32px;
   height: 32px;
   line-height: 28px;
-  border: 0px solid #e0e0e0;
+  border: 0px solid white;
 }
 
 
@@ -213,7 +212,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #1d5aa9;
+  background-color: black;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
