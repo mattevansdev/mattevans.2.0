@@ -25,7 +25,7 @@ class Header extends React.Component {
         return (
             <div className="bg-gray-50 dark:bg-gray-800">
                 <div className="container">
-                    <div className="flex justify-between">
+                    <div className="flex justify-between items center">
                         <div className="flex space-x-4">
                             <div>
                                 <a href="/" className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
@@ -33,53 +33,34 @@ class Header extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div className="bg-gray-900 text-center">
-                            <Menu right isOpen={this.state.menuOpen}
-                                onStateChange={(state) => this.handleStateChange(state)} width={'100%'} pageWrapId={"page-wrap"}>
-                                <main id="page-wrap">
-                                    <div className="">
-                                        <img className="inline-block align-middle h-24 md:h-15 rounded-full" src="/assets/images/profile.jpg" alt="Matthew Evans" />
-                                        <h2 className="text-xl sm:text-3xl font-extrabold dark:text-gray-300 pt-5">Matt Evans</h2>
-                                        <h3 className="text-xl lg:text-xl dark:text-gray-300 pt-1 pb-20">Full Stack & Mobile Application Developer</h3>
-                                    </div>
-                                    <div className="p-2">
-                                        <NavLink onClick={() => this.closeMenu()} className="text-4xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/">
-                                            <span>Home</span>
-                                        </NavLink>
-                                    </div>
-                                    <div className="p-2">
-                                        <NavLink onClick={() => this.closeMenu()} className="text-4xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
-                                            <span>Blog</span>
-                                        </NavLink>
-                                    </div>
-                                    <div className="p-2">
-                                        <NavLink onClick={() => this.closeMenu()} className="text-4xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/projects">
-                                            <span>Projects</span>
-                                        </NavLink>
-                                    </div>
-                                    <div className="p-2">
-                                        <NavLink onClick={() => this.closeMenu()} className="text-4xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/contact">
-                                            <span>Contact</span>
-                                        </NavLink>
-                                    </div>
+                        <Menu right className="text-center" isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} disableAutoFocus >
+                            <div className="flex justify-between items-center">
+                                <div className="p-2">
+                                    <NavLink onClick={() => this.closeMenu()} className="menu-item p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 dark:text-gray-300 dark:hover:text-gray-500" to="/">
+                                        <span>Home</span>
+                                    </NavLink>
+                                </div>
+                                <div className="p-2">
+                                    <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
+                                        <span>Blog</span>
+                                    </NavLink>
+                                </div>
+                                <div className="p-2">
+                                    <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/projects">
+                                        <span>Projects</span>
+                                    </NavLink>
+                                </div>
+                                <div className="p-2">
+                                    <NavLink onClick={() => this.closeMenu()} className="menu-item p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/contact">
+                                        <span>Contact</span>
+                                    </NavLink>
+                                </div>
+                            </div>
+                        </Menu>
 
-                                    <div className="social-links">
-                                        <a className="btn btn-social-icon px-4 text-xl" href="http://instagram.com/mattevansdev">
-                                            <i className="fa fa-instagram text-gray-300 hover:text-blue-400"></i>
-                                        </a>
-                                        <a className="btn btn-social-icon px-4 text-xl" href="http://facebook.com/matthew.evans">
-                                            <i className="fa fa-facebook text-gray-300 hover:text-blue-400"></i>
-                                        </a>
-                                        <a className="btn btn-social-icon px-4 text-xl" href="http://twitter.com/matthewevansdev">
-                                            <i className="fa fa-twitter text-gray-300 hover:text-blue-400"></i>
-                                        </a>
-                                    </div>
-                                </main>
-                            </Menu>
-                        </div>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }

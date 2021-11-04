@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'typeface-open-sans';
 import Header from './components/HeaderComponent';
 import Home from './components/HomeComponent';
 import About from './components/AboutComponent';

@@ -11,7 +11,7 @@ class About extends Component {
                     </div>
                 </div>
                 <div className="bg-indigo-50 container mx-auto rounded-3xl -mt-44 py-3 text-gray-900 ">
-                    <div className="text-center grid md:col-1 xl:grid-cols-3 divide-x divide-gray-200">
+                    <div className="text-center grid md:col-1 xl:grid-cols-3 divide-x divide-gray-300">
                         <div className="py-10">
                             <img className="py-10 mx-auto" src="/assets/images/web-programming.png" width="64" height="auto"
                                 alt="Front-end Developement Icon" />
