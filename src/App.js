@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import 'typeface-open-sans';
 import Header from './components/HeaderComponent';
 import Home from './components/HomeComponent';
 import About from './components/AboutComponent';
 import Workspace from './components/WorkspaceComponent';
 import Footer from './components/FooterComponent';
-import AllPosts from './components/AllPostComponent';
-import SinglePosts from './components/SinglePostComponent';
-import Projects from './components/ProjectsComponent'
 import Contact from './components/ContactComponent';
 import Work from './components/WorkComponent';
-import AboutPage from './components/AboutPageComponent';
-import { BrowserRouter, Route } from 'react-router-dom';
+import AboutPage from './components/pages/About';
+import AllPosts from './components/pages/AllPost';
+import SinglePosts from './components/pages/SinglePost';
+import Projects from './components/pages/Projects'
 import './App.css';
 
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SanityClient from "../client.js";
+import SanityClient from "../../client";
 
 export default function Project() {
 
