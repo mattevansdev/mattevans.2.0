@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 function AboutPage() {
     return (
-        <div className="bg-gray-50 y-32 px-10 min-h-screen text-xl dark:bg-gray-800 text-gray-300">
-            <h3 className="py-4 text-xl text-center lg:text-5xl font-extrabold dark:text-gray-300">Hey there, I'm Matt Evans</h3>
+        <div className="bg-gray-50 y-32 px-10 min-h-screen dark:bg-gray-800 text-gray-300">
+            <h3 className="py-4 text-3xl text-center md:text-5xl font-extrabold dark:text-gray-300">Hey there, I'm Matt Evans</h3>
             <div className="max-w-5xl mx-auto">
                 <div className="p-5">
                     <img className="h-1/2 w-full object-cover rounded-xl" src="/assets/images/about-profile.jpeg" /></div>
