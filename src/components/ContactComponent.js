@@ -3,21 +3,23 @@ import { useForm, ValidationError } from '@formspree/react';
 
 
 function Contact() {
-    const [state, handleSubmit] = useForm("mvodyyen");
-    if (state.succeeded) {
-        return <div className="bg-gray-50 y-32 px-10 text-xl dark:bg-gray-800 text-gray-300">
-            <div className="p-10 md:w-1/2 mx-auto">
-                    <h1 className="text-5xl text-gray-900 flex justify-center pb-10 dark:text-gray-300">Contact</h1>
-                    <p className="text-gray-900 dark:text-gray-300">Thanks for your email!</p></div>
-            </div>
-    }
+    // const [state, handleSubmit] = useForm("mvodyyen");
+    // if (state.succeeded) {
+    //     return <div className="bg-gray-50 y-32 px-10 text-xl dark:bg-gray-800 text-gray-300">
+    //         <div className="p-10 md:w-1/2 mx-auto">
+    //                 <h1 className="text-5xl text-gray-900 flex justify-center pb-10 dark:text-gray-300">Contact</h1>
+    //                 <p className="text-gray-900 dark:text-gray-300">Thanks for your email!</p></div>
+    //         </div>
+    // }
         return (
-            <div className="bg-gray-50 y-32 px-10 text-xl dark:bg-gray-800 text-gray-300">
-                <div className="p-10 md:w-1/2 mx-auto">
+            <div className="bg-gray-50 h-96 text-xl dark:bg-gray-800 text-gray-300">
+                <div className="p-10 max-w-6xl mx-auto">
                     <h1 className="text-5xl text-gray-900 flex justify-center pb-10 dark:text-gray-300">Contact</h1>
-                    <p className="text-gray-900 dark:text-gray-300">Hey there! This is the page where I tell you I get lots of email and read them all but can't reply to everything. It's easiest to find me on Instagram: <a href="https://www.instagram.com/mattevans.dev/">@mattevans.dev</a> or you can <a href="mailto:me@mattevans.dev">email me</a>.</p>
+                    <p className="text-gray-900 leading-10 dark:text-gray-300">Hi there, I'm excited to take on new projects and collaborate with other developers. If you are interested in working together, shoot me an email directly at <a href="mailto:me@mattevans.dev">me@mattevans.dev</a>.</p>
+
+                    
                 </div>
-                <div className="pb-20">
+                {/* <div className="pb-20">
                 <form onSubmit={handleSubmit} class="md:w-1/2 mx-auto">
                     <div className="shadow-xl">
                         <div className="flex items-center bg-blue-800 rounded-t-lg border-b border-gray-500">
@@ -34,7 +36,7 @@ function Contact() {
                     </div>
                     <button className="block w-full rounded bg-blue-500 py-3 text-white font-bold shadow" type="submit" disabled={state.submitting}>Submit</button>
                 </form>
-                </div>
+                </div> */}
             </div>
         )
 }
