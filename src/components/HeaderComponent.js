@@ -41,6 +41,11 @@ class Header extends React.Component {
                                     </NavLink>
                                 </div>
                                 <div className="p-2">
+                                    <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/about">
+                                        <span>About</span>
+                                    </NavLink>
+                                </div>
+                                <div className="p-2">
                                     <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
                                         <span>Blog</span>
                                     </NavLink>
