@@ -37,31 +37,31 @@ export default function SinglePosts() {
     if (!postData) return <div>Loading...</div>
 
     return (
-        <div className="bg-gray-50 dark:bg-gray-800 ">
-            <div className="container min-h-screen p-12 max-w-7xl mx-auto ">
-                <div className="shadow-lg mx-auto bg-white rounded-lg">
-                    <div className="relative">
-                        <div className="absolute h-full w-full flex items-center justify-center p-8">
-                        </div>
-                        <img
-                            className="h-48 w-full object-cover rounded-t"
-                            src={urlFor(postData.mainImage).url()}
-                            alt=""
-                            style={{ height: "400px" }}
-                        />
-                    </div>
-                    <div className="bg-white bg-opacity-75 rounded pt-5">
-                        <h2 className="flex justify-center text-3xl lg:text-6xl mb-4">
+        <div className="bg-gray-50 min-h-screen dark:bg-gray-800 dark:text-gray-300">
+            <div className="container min-h-screen p-12">
+                <div className="max-w-5xl mx-auto">
+                <div className="dark:text-gray-300">
+                        <h2 className="flex justify-center py-4 text-3xl text-center md:text-5xl font-extrabold dark:text-gray-300">
                             {postData.title}
                         </h2>
-                        <div className="flex justify-center text-gray-800">
+                        <div className="flex justify-center text-gray-800 dark:text-gray-300">
 
                             <span className="flex items-center pl-2 text-sm">
                                 Written by: {postData.name}
                             </span>
                         </div>
                     </div>
-                    <div className="px-10 lg:px-48 py-10 lg:py-15 prose lg:prose-xl max-w-full">
+                    <div className="relative p-10 ">
+                        <div className="absolute h-full w-full flex items-center justify-center p-8">
+                        </div>
+                        <img
+                            className="h-48 w-full object-cover rounded-xl"
+                            src={urlFor(postData.mainImage).url()}
+                            alt=""
+                            style={{ height: "400px" }}
+                        />
+                    </div>
+                    <div className="pt-3 pl-3 pr-3 pb-20 text-2xl leading-10 max-w-7xl mx-auto prose lg:prose-xl  dark:text-gray-300">
                         <BlockContent
                             blocks={postData.body}
                             projectId={sanityClient.projectId}

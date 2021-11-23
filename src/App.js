@@ -4,7 +4,6 @@ import 'typeface-open-sans';
 import Header from './components/HeaderComponent';
 import Home from './components/HomeComponent';
 import About from './components/AboutComponent';
-import Workspace from './components/WorkspaceComponent';
 import Footer from './components/FooterComponent';
 import Contact from './components/ContactComponent';
 import Work from './components/WorkComponent';
@@ -12,6 +11,7 @@ import AboutPage from './components/pages/About';
 import AllPosts from './components/pages/AllPost';
 import SinglePosts from './components/pages/SinglePost';
 import Projects from './components/pages/Projects'
+import Workspace from './components/pages/Workspace';
 import './App.css';
 
 
