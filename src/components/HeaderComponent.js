@@ -1,5 +1,5 @@
-import React, { Component, useState } from 'react';
-import { slide as Menu } from 'react-burger-menu'
+import React, { Component, useState, useContext } from 'react';
+import { fallDown as Menu } from 'react-burger-menu'
 import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
@@ -32,37 +32,38 @@ class Header extends React.Component {
                                     <img src="/assets/images/logo100x100.png" height="60" width="60" alt="Logo" />
                                 </a>
                             </div>
-                        </div>
-                        <Menu right className="text-center" isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} disableAutoFocus >
-                            <div className="flex justify-between items-center">
-                                <div className="p-2">
-                                    <NavLink onClick={() => this.closeMenu()} className="menu-item p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 dark:text-gray-300 dark:hover:text-gray-500" to="/">
-                                        <span>Home</span>
-                                    </NavLink>
-                                </div>
-                                <div className="p-2">
-                                    <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/about">
-                                        <span>About</span>
-                                    </NavLink>
-                                </div>
-                                <div className="p-2">
-                                    <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
-                                        <span>Blog</span>
-                                    </NavLink>
-                                </div>
-                                <div className="p-2">
-                                    <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/projects">
-                                        <span>Projects</span>
-                                    </NavLink>
-                                </div>
-                                <div className="p-2">
-                                    <NavLink onClick={() => this.closeMenu()} className="menu-item p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/contact">
-                                        <span>Contact</span>
-                                    </NavLink>
-                                </div>
+                            <div>
+                                <Menu right className="text-center" isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} disableAutoFocus width={'100%'} >
+                                    <div className="flex justify-between items-center">
+                                        <div className="p-2">
+                                            <NavLink onClick={() => this.closeMenu()} className="menu-item p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 dark:text-gray-300 dark:hover:text-gray-500" to="/">
+                                                <span>Home</span>
+                                            </NavLink>
+                                        </div>
+                                        <div className="p-2">
+                                            <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/about">
+                                                <span>About</span>
+                                            </NavLink>
+                                        </div>
+                                        <div className="p-2">
+                                            <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/blog">
+                                                <span>Blog</span>
+                                            </NavLink>
+                                        </div>
+                                        <div className="p-2">
+                                            <NavLink onClick={() => this.closeMenu()} className="p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/projects">
+                                                <span>Projects</span>
+                                            </NavLink>
+                                        </div>
+                                        <div className="p-2">
+                                            <NavLink onClick={() => this.closeMenu()} className="menu-item p-2 text-xl md:text-4xl font-bold uppercase text-gray-300 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-500" to="/contact">
+                                                <span>Contact</span>
+                                            </NavLink>
+                                        </div>
+                                    </div>
+                                </Menu>
                             </div>
-                        </Menu>
-
+                        </div>
                     </div>
                 </div>
             </div >
