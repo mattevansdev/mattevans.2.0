@@ -32,7 +32,7 @@ export default function AllPosts() {
             <div className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center">
-                        <h2 className="text-4xl leading-10 tracking-tight front-extrabold text-gray-900 dark:text-gray-300">From the blog</h2>
+                    <h3 className="py-4 text-3xl text-center md:text-5xl font-extrabold dark:text-gray-300">Latest Blogs & Reviews</h3>
                     </div>
                     <div className="mt-12 grid gap-12 max-w-lg mx-auto lg:grid-cols-2 lg:max-w-none">
                         {allPostData &&
